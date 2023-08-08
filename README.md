@@ -93,6 +93,7 @@ world_data_unemployment["Gross primary education enrollment (%)"] = world_data_u
 sns.regplot(y=world_data_unemployment.loc[:, "Gross primary education enrollment (%)"], x=world_data_unemployment.loc[:, "Unemployment rate"])
 ```
 > The analysis revealed a slight negative trend; however, this observation alone does not provide sufficient grounds for definitive conclusions. To gain a deeper understanding of the relationship, further analysis is warranted.
+> 
 ![](3.png)
 
 ## Analysis of healthcare metrics such as infant mortality and life expectancy to assess overall well-being
@@ -161,7 +162,8 @@ world_data_gdp["GDP"] = world_data_gdp.loc[:, "GDP"].str.replace(',', '').str.st
 
 sns.regplot(y=world_data_gdp.loc[:, "GDP"], x=world_data_gdp.loc[:, "Total tax rate"])
 ```
-> This visual representation highlights an intriguing observation - a positive correlation exists between higher taxation rates and greater GDP. However, it's essential to note that this regplot doesn't clarify whether higher taxation rates drive greater GDP or vice versa. Further analysis is imperative to decipher the causative factors underlying this relationship.
+> This visual representation highlights an intriguing observation - a positive correlation exists between higher taxation rates and greater GDP. However, it's essential to note that this regplot doesn't clarify whether higher taxation rates drive greater GDP or vice versa. Further analysis is imperative to decipher the factors underlying this relationship.
+> 
 ![](7.png)
 
 In addition to taxation, I sought to explore another pivotal relationship - that between GDP and life expectancy. This correlation often reflects the quality of life and overall well-being within an economy:
